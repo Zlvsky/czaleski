@@ -28,7 +28,9 @@ const config: Config = {
         gray7B: '#7B7B7B',
         dark26: '#262626',
         dark48: '#484848',
+        dark30: '#303030',
         darkbg: '#1F1F1F',
+        darkborder: '#484848',
         green: '#2CA56B'
       },
       boxShadow: {
