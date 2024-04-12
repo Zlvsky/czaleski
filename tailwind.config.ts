@@ -21,13 +21,14 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
       },
       colors: {
-        gray1: '#7B7B7B',
+        gray1: '#A1A1A1',
         gray2: '#606060',
         grayA1: '#A1A1A1',
         grayE8: '#E8E8E8',
         gray7B: '#7B7B7B',
         dark26: '#262626',
         dark48: '#484848',
+        darkbg: '#1F1F1F',
         green: '#2CA56B'
       },
       boxShadow: {

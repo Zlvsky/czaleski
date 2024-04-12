@@ -4,7 +4,7 @@
 
 body {
   color: #000;
-  background: #fff;
+  background: #F5F5F5;
 }
 @layer utilities {
   .text-balance {

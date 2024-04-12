@@ -1,5 +1,6 @@
 import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
+import ContentContainer from '@/components/layout/ContentContainer'
 import PageWrap from '@/components/layout/PageWrap'
 import About from '@/components/main-page/About'
 import Contact from '@/components/main-page/Contact'
@@ -11,14 +12,14 @@ export default function Home() {
   return (
     <PageWrap>
       <Header />
-      <Hero />
-      <div className="w-full bg-white z-10">
+      <ContentContainer>
+        <Hero />
         <Works />
         <Stack />
         <About />
         <Contact />
         <Footer />
-      </div>
+      </ContentContainer>
     </PageWrap>
   )
 }
