@@ -174,7 +174,7 @@ function Hero() {
 
   return (
     <PageWrap>
-      <div ref={wrapper} className="relative mx-auto h-screen w-full max-w-7xl px-4">
+      <div ref={wrapper} className="relative mx-auto  w-full max-w-7xl px-4">
         <main
           className="mt-48 flex flex-col items-center px-1 md:mt-6 md:p-24"
           ref={container}>

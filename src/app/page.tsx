@@ -5,6 +5,7 @@ import PageWrap from '@/components/layout/PageWrap'
 import About from '@/components/main-page/About'
 import Contact from '@/components/main-page/Contact'
 import Hero from '@/components/main-page/Hero'
+import Offer from '@/components/main-page/Offer'
 import Process from '@/components/main-page/Process'
 import Stack from '@/components/main-page/Stack'
 import Works from '@/components/main-page/Works'
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       <ContentContainer>
         <Hero />
+        <Offer />
         <Process />
         {/* <Works /> */}
         <Stack />
