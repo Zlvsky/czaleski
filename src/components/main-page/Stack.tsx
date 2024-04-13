@@ -25,7 +25,7 @@ function Stack() {
   ]
 
   const SingleStack = ({ data }: { data: { name: string; icon: any } }) => (
-    <div className="group relative flex flex-col items-center justify-center bg-white rounded-full border border-grayE8 py-1.5 px-5 min-w-20">
+    <div className="group relative flex flex-col items-center justify-center bg-dark26 rounded-full border border-darkborder py-1.5 px-5 min-w-20">
       <data.icon />
       <div className="absolute -top-12 flex-col items-center flex opacity-0 drop-shadow-sm mb-5 transition-opacity group-hover:opacity-100 ease-in">
         <span className="relative rounded-md z-10 p-3 text-xs leading-none tracking-tight text-white whitespace-no-wrap bg-[#111928] shadow-lg">
@@ -39,7 +39,7 @@ function Stack() {
   return (
     <BigContainer id="skills">
       <div className="flex flex-col gap-4 mt-10 w-full">
-        <h3 className="text-center text-lg text-gray7B tracking-tight">
+        <h3 className="text-center text-base text-white/60 tracking-tight">
           Tech stack I work with
         </h3>
         <div className="flex flex-row flex-wrap justify-center items-center gap-2 w-full">

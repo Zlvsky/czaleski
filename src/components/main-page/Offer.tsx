@@ -35,7 +35,7 @@ function Offer() {
             </div>
             <div className="flex items-center gap-3">
               {offer.icons.map((Icon, index) => (
-                <Icon key={index} />
+                <Icon key={index} width={40} height={40} />
               ))}
             </div>
           </div>

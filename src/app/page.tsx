@@ -17,9 +17,9 @@ export default function Home() {
       <ContentContainer>
         <Hero />
         <Offer />
+        <Stack />
         <Process />
         {/* <Works /> */}
-        <Stack />
         <About />
         <Contact />
         <Footer />
