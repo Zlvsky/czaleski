@@ -10,7 +10,7 @@ const PageWrap = memo(({ children, isGradient }: IProps) => {
   return (
     <div
       id="pagewrap"
-      className={`h-full w-full flex flex-col items-center ${isGradient ? 'bg-gradient-to-b from-[#F5F5F5] to-white' : ''}`}
+      className={`flex h-full w-full flex-col items-center ${isGradient ? 'bg-gradient-to-b from-[#F5F5F5] to-white' : ''}`}
     >
       {children}
     </div>

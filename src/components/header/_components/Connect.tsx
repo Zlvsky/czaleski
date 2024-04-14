@@ -26,8 +26,8 @@ const Socials = () => {
 const PingDot = () => {
   return (
     <span className="relative flex h-3 w-3">
-      <span className="animate-ping duration-150 absolute inline-flex h-full w-full rounded-full bg-green opacity-60"></span>
-      <span className="relative inline-flex rounded-full h-3 w-3 bg-green"></span>
+      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green opacity-60 duration-150"></span>
+      <span className="relative inline-flex h-3 w-3 rounded-full bg-green"></span>
     </span>
   )
 }
@@ -35,18 +35,18 @@ const PingDot = () => {
 const ConnectButton = () => (
   <a
     href="mailto:zlvsky@icloud.com"
-    className="bg-primary text-white px-1 py-2 rounded-md"
+    className="bg-primary rounded-md px-1 py-2 text-white"
   >
-    <button className="flex flex-row items-center bg-white/50 hover:bg-grayE8/40 py-3 px-4 border border-grayE8 transition-colors ease-in rounded-xl">
+    <button className="flex flex-row items-center rounded-xl border border-grayE8 bg-white/50 px-4 py-3 transition-colors ease-in hover:bg-grayE8/40">
       <PingDot />
-      <span className="text-gray2 text-sm ml-3">Send me an email</span>
+      <span className="ml-3 text-sm text-gray2">Send me an email</span>
     </button>
   </a>
 )
 
 function Connect() {
   return (
-    <div className="flex items-center w-full md:w-auto justify-between md:justify-end gap-4">
+    <div className="flex w-full items-center justify-between gap-4 md:w-auto md:justify-end">
       <Socials />
       <ConnectButton />
     </div>

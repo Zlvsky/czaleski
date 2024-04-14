@@ -25,24 +25,24 @@ function Stack() {
   ]
 
   const SingleStack = ({ data }: { data: { name: string; icon: any } }) => (
-    <div className="group relative flex flex-col items-center justify-center bg-dark26 rounded-full border border-darkborder py-1.5 px-5 min-w-20">
+    <div className="group relative flex min-w-20 flex-col items-center justify-center rounded-full border border-darkborder bg-dark26 px-5 py-1.5">
       <data.icon />
-      <div className="absolute -top-12 flex-col items-center flex opacity-0 drop-shadow-sm mb-5 transition-opacity group-hover:opacity-100 ease-in">
-        <span className="relative rounded-md z-10 p-3 text-xs leading-none tracking-tight text-white whitespace-no-wrap bg-[#111928] shadow-lg">
+      <div className="absolute -top-12 mb-5 flex flex-col items-center opacity-0 drop-shadow-sm transition-opacity ease-in group-hover:opacity-100">
+        <span className="whitespace-no-wrap relative z-10 rounded-md bg-[#111928] p-3 text-xs leading-none tracking-tight text-white shadow-lg">
           {data.name}
         </span>
-        <div className="w-3 h-3 -mt-2 rotate-45 bg-[#111928]"></div>
+        <div className="-mt-2 h-3 w-3 rotate-45 bg-[#111928]"></div>
       </div>
     </div>
   )
 
   return (
     <BigContainer id="skills">
-      <div className="flex flex-col gap-4 mt-10 w-full">
-        <h3 className="text-center text-base text-white/60 tracking-tight">
+      <div className="mt-10 flex w-full flex-col gap-4">
+        <h3 className="text-center text-base tracking-tight text-white/60">
           Tech stack I work with
         </h3>
-        <div className="flex flex-row flex-wrap justify-center items-center gap-2 w-full">
+        <div className="flex w-full flex-row flex-wrap items-center justify-center gap-2">
           {stack.map((item, index) => (
             <SingleStack key={index} data={item} />
           ))}

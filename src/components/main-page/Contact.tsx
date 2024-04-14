@@ -3,8 +3,8 @@ import BigContainer from '../layout/BigContainer'
 const PingDot = () => {
   return (
     <span className="relative flex h-3 w-3">
-      <span className="animate-ping duration-150 absolute inline-flex h-full w-full rounded-full bg-green opacity-60"></span>
-      <span className="relative inline-flex rounded-full h-3 w-3 bg-green"></span>
+      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green opacity-60 duration-150"></span>
+      <span className="relative inline-flex h-3 w-3 rounded-full bg-green"></span>
     </span>
   )
 }
@@ -12,20 +12,20 @@ const PingDot = () => {
 function Contact() {
   return (
     <BigContainer id="contact">
-      <div className="flex flex-col items-center justify-center gap-5 mt-16 md:mt-28">
-        <h3 className="text-xl md:text-3xl tracking-tighter text-black">
+      <div className="mt-16 flex flex-col items-center justify-center gap-5 md:mt-28">
+        <h3 className="text-xl tracking-tighter text-white md:text-3xl">
           Interested in working together?
         </h3>
         <a
           href="mailto:zlvsky@icloud.com"
-          className="bg-primary w-full max-w-64 text-white px-1 py-2 rounded-md"
+          className="bg-primary w-full max-w-64 rounded-md px-1 py-2 text-white"
         >
-          <button className="flex flex-row w-full  max-w-64 justify-center items-center bg-white/50 hover:bg-grayE8/40 py-3 px-4 border border-grayE8 transition-colors ease-in rounded-xl">
+          <button className="flex w-full max-w-64  flex-row items-center justify-center rounded-xl border  border-darkborder bg-dark30/60 px-4 py-3">
             <PingDot />
-            <span className="text-gray2 text-lg ml-3">Send me an email</span>
+            <span className="ml-3 text-lg text-white">Send me an email</span>
           </button>
         </a>
-        <span className="tracking-tight text-gray7B">Let&apos;s build together! </span>
+        <span className="tracking-tight text-white/60">Let&apos;s build together! </span>
       </div>
     </BigContainer>
   )

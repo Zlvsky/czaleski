@@ -4,24 +4,24 @@ import { motion } from 'framer-motion'
 import { useRef } from 'react'
 import PageWrap from '../layout/PageWrap'
 
-import client1 from "@/assets/images/clients/iwona.png";
-import client2 from "@/assets/images/clients/pawel.png";
-import client3 from "@/assets/images/clients/skrzynk.png";
-import client4 from "@/assets/images/clients/tomaszmichno.png";
-import client5 from "@/assets/images/clients/wbhale.png";
-import StarSvg from "@/assets/icons/common/star.svg";
-import EmailSvg from "@/assets/icons/common/email.svg";
-import Image, { StaticImageData } from 'next/image';
+import EmailSvg from '@/assets/icons/common/email.svg'
+import StarSvg from '@/assets/icons/common/star.svg'
+import client1 from '@/assets/images/clients/iwona.png'
+import client2 from '@/assets/images/clients/pawel.png'
+import client3 from '@/assets/images/clients/skrzynk.png'
+import client4 from '@/assets/images/clients/tomaszmichno.png'
+import client5 from '@/assets/images/clients/wbhale.png'
+import Image, { StaticImageData } from 'next/image'
 
 const ClientAvatar = ({ img }: { img: StaticImageData }) => {
   return (
-      <Image
-        src={img}
-        alt="client"
-        height={40}
-        width={40}
-        className="h-10 w-10 rounded-full  border-2 border-black -ml-4"
-      />
+    <Image
+      src={img}
+      alt="client"
+      height={40}
+      width={40}
+      className="-ml-4 h-10 w-10  rounded-full border-2 border-black"
+    />
   )
 }
 
@@ -41,16 +41,17 @@ const Testimonials = () => {
       variants={{
         visible: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 30 }
-      }}>
+      }}
+    >
       <div className="flex flex-row items-center gap-1.5">
-        <div className="flex flex-row-reverse items-center ml-4">
+        <div className="ml-4 flex flex-row-reverse items-center">
           <ClientAvatar img={client1} />
           <ClientAvatar img={client2} />
           <ClientAvatar img={client3} />
           <ClientAvatar img={client4} />
           <ClientAvatar img={client5} />
         </div>
-        <div className='flex flex-col'>
+        <div className="flex flex-col">
           <div className="flex items-center gap-0.5">
             <StarSvg />
             <StarSvg />
@@ -58,7 +59,7 @@ const Testimonials = () => {
             <StarSvg />
             <StarSvg />
           </div>
-          <span className='text-sm text-white tracking-tight'>trusted by clients</span>
+          <span className="text-sm tracking-tight text-white">trusted by clients</span>
         </div>
       </div>
     </motion.div>
@@ -81,8 +82,9 @@ const SubHeader = () => {
       variants={{
         visible: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 30 }
-      }}>
-      <h4 className="mb-4 mt-5 flex items-center gap-1 bg-dark26 rounded-lg border border-darkborder px-1 py-1.5 text-base tracking-tight text-white/50">
+      }}
+    >
+      <h4 className="mb-4 mt-5 flex items-center gap-1 rounded-lg border border-darkborder bg-dark26 px-1 py-1.5 text-base tracking-tight text-white/50">
         coded websites ◦ web apps ◦ outsourcing
       </h4>
     </motion.div>
@@ -105,8 +107,9 @@ const MainHeader = () => {
       variants={{
         visible: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 30 }
-      }}>
-      <h1 className="text-3xl md:text-[5rem] md:leading-[5rem] max-w-3xl font-medium text-white text-center tracking-tighter">
+      }}
+    >
+      <h1 className="max-w-3xl text-center text-3xl font-medium tracking-tighter text-white md:text-[5rem] md:leading-[5rem]">
         Freelancing developer that gets work done.
       </h1>
     </motion.div>
@@ -130,7 +133,8 @@ const Description = () => {
         visible: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 30 }
       }}
-      className="mt-8 text-gray1 text-center text-lg md:text-20 tracking-tight">
+      className="mt-8 text-center text-lg tracking-tight text-gray1 md:text-20"
+    >
       <p className="max-w-xl">
         Seamlessly transitioning from crafting{' '}
         <span className="text-white">websites that fuel your growth </span>
@@ -144,7 +148,7 @@ const Description = () => {
 const ContactButton = () => {
   return (
     <a href="mailto:webzaleski@gmail.com">
-      <button className="bg-dark30/60 border-darkborder mt-8 flex flex-row items-center rounded-2xl border px-5 py-4">
+      <button className="mt-8 flex flex-row items-center rounded-2xl border border-darkborder bg-dark30/60 px-5 py-4">
         <EmailSvg className="-mt-1.5" />
         <span className="ml-2 text-20 tracking-tight text-white">Get In Touch</span>
       </button>
@@ -162,7 +166,7 @@ const PingDot = () => {
 }
 
 const Available = () => (
-  <div className="flex flex-row items-center mt-3">
+  <div className="mt-3 flex flex-row items-center">
     <PingDot />
     <span className="ml-3 text-sm text-white/50">Available Now</span>
   </div>
@@ -176,8 +180,9 @@ function Hero() {
     <PageWrap>
       <div ref={wrapper} className="relative mx-auto  w-full max-w-7xl px-4">
         <main
-          className="mt-48 flex flex-col items-center px-1 md:mt-6 md:p-24"
-          ref={container}>
+          className=" mb-20 mt-20 flex flex-col items-center px-1 md:mb-0 md:mt-6 md:p-24"
+          ref={container}
+        >
           <Testimonials />
           <SubHeader />
           <MainHeader />

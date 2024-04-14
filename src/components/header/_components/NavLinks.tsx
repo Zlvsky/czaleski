@@ -4,25 +4,34 @@ interface ISingleLink {
 }
 
 const ahrefs = [
-  { href: '#works', text: 'Works' },
-  { href: '#skills', text: 'Skills' },
-  { href: '#about', text: 'About me' },
-  { href: '#contact', text: 'Contact' }
+  {
+    href: 'https://drive.google.com/file/d/1qIPu8SZ8ihFguJIER_0vAFMAAvaN6JPJ/view',
+    text: 'Resume'
+  },
+  {
+    href: 'https://czaleski.gumroad.com/',
+    text: 'Gumroad'
+  }
 ]
 
 const SingleLink: React.FC<ISingleLink> = ({ href, text }) => {
   return (
-      <a href={href} className="text-sm text-gray2 ">
-    <li className="bg-transparent hover:bg-grayE8/40 transition-colors ease-in cursor-pointer rounded-md px-2 py-1.5">
+    <a
+      href={href}
+      className="text-sm text-gray2"
+      target="_blank"
+      referrerPolicy="no-referrer"
+    >
+      <li className="cursor-pointer rounded-md bg-transparent px-2 py-1.5 transition-colors ease-in hover:bg-grayE8/40">
         {text}
-    </li>
-      </a>
+      </li>
+    </a>
   )
 }
 
 const NavLinks = () => {
   return (
-    <ul className="hidden lg:flex flex-row items-center gap-2">
+    <ul className="hidden flex-row items-center gap-2 lg:flex">
       {ahrefs.map((link, index) => (
         <SingleLink key={index} {...link} />
       ))}

@@ -6,7 +6,7 @@ interface IProps extends IChildren {
 
 export default function BigContainer({ children, id }: IProps) {
   return (
-    <div id={id} className="w-full max-w-7xl px-4 mx-auto">
+    <div id={id} className="mx-auto w-full max-w-7xl px-4">
       {children}
     </div>
   )

@@ -13,6 +13,14 @@ const links = [
   {
     name: 'LinkedIn',
     link: 'https://www.linkedin.com/in/krzysztof-zaleski02/'
+  },
+  {
+    name: 'Gumroad',
+    link: 'https://czaleski.gumroad.com/'
+  },
+  {
+    name: 'Resume',
+    link: 'https://drive.google.com/file/d/1qIPu8SZ8ihFguJIER_0vAFMAAvaN6JPJ/view'
   }
 ]
 
@@ -21,18 +29,18 @@ function Footer() {
 
   return (
     <BigContainer>
-      <div className="flex flex-col md:flex-row items-center justify-between py-10 mt-20">
-        <span className="text-sm text-gray7B tracking-tight">
+      <div className="mt-20 flex flex-col items-center justify-between py-10 md:flex-row">
+        <span className="text-sm tracking-tight text-gray7B">
           © {year} Krzysztof Zaleski. All Rights Reserved.
         </span>
-        <div className="flex flex-row gap-5 items-center">
+        <div className="flex flex-row items-center gap-5">
           {links.map((link, index) => (
             <a
               key={index}
               href={link.link}
               target="_blank"
               rel="noreferrer"
-              className="flex flex-row gap-1 items-center text-xs uppercase text-gray7B tracking-tight hover:text-black transition-colors ease-in"
+              className="flex flex-row items-center gap-1 text-xs uppercase tracking-tight text-gray7B transition-colors ease-in hover:text-black"
             >
               {link.name} <LinkSVG />
             </a>

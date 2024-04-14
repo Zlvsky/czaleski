@@ -1,7 +1,7 @@
-import React from 'react';
-import NextSVG from "@/assets/icons/offers/nextjs.svg";
-import ReactSVG from "@/assets/icons/offers/reactjs.svg";
-import TailwindSVG from "@/assets/icons/offers/tailwind.svg";
+import NextSVG from '@/assets/icons/offers/nextjs.svg'
+import ReactSVG from '@/assets/icons/offers/reactjs.svg'
+import TailwindSVG from '@/assets/icons/offers/tailwind.svg'
+import BigContainer from '../layout/BigContainer'
 
 const offerData = [
   {
@@ -23,15 +23,19 @@ const offerData = [
 ]
 
 function Offer() {
-    return (
-      <div className="grid grid-cols-3  gap-12 ">
+  return (
+    <BigContainer>
+      <div className="grid grid-cols-1 gap-12 md:grid-cols-2  lg:grid-cols-3 ">
         {offerData.map((offer, index) => (
           <div
             key={index}
-            className="flex aspect-square h-full flex-col justify-between rounded-2xl border border-darkborder bg-dark26/60 p-8">
+            className="flex aspect-square h-full flex-col justify-between rounded-2xl border border-darkborder bg-dark26/60 p-8"
+          >
             <div className="">
-              <h3 className="text-white mb-4 text-2xl font-medium tracking-tighter">{offer.title}</h3>
-              <p className="text-gray1 text-lg">{offer.description}</p>
+              <h3 className="mb-4 text-2xl font-medium tracking-tighter text-white">
+                {offer.title}
+              </h3>
+              <p className="text-lg text-gray1">{offer.description}</p>
             </div>
             <div className="flex items-center gap-3">
               {offer.icons.map((Icon, index) => (
@@ -41,9 +45,8 @@ function Offer() {
           </div>
         ))}
       </div>
-    )
+    </BigContainer>
+  )
 }
 
-
-
-export default Offer;
+export default Offer
