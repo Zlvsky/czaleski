@@ -84,7 +84,7 @@ const SubHeader = () => {
         hidden: { opacity: 0, y: 30 }
       }}
     >
-      <h4 className="mb-4 mt-5 flex items-center gap-1 rounded-lg border border-darkborder bg-dark26 px-1 py-1.5 text-base tracking-tight text-white/50">
+      <h4 className="mb-4 mt-5 flex items-center text-center gap-1 rounded-lg border border-darkborder bg-dark26 px-1 py-1.5 text-base tracking-tight text-white/50">
         coded websites ◦ web apps ◦ outsourcing
       </h4>
     </motion.div>
@@ -178,9 +178,9 @@ function Hero() {
 
   return (
     <PageWrap>
-      <div ref={wrapper} className="relative mx-auto  w-full max-w-7xl px-4">
+      <div ref={wrapper} className="relative mx-auto  w-full max-w-7xl md:px-4">
         <main
-          className=" mb-20 mt-20 flex flex-col items-center px-1 md:mb-0 md:mt-6 md:p-24"
+          className=" mb-20 mt-20 flex flex-col items-center md:px-1 md:mb-0 md:mt-6 md:p-24"
           ref={container}
         >
           <Testimonials />

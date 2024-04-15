@@ -5,7 +5,7 @@ import BigContainer from '../layout/BigContainer'
 const Description = () => (
   <div>
     <h2 className="mb-4 text-center text-4xl tracking-tighter text-white">About me</h2>
-    <p className="text-xl tracking-tighter text-white/60">
+    <p className="text-lg tracking-tighter text-white/60 md:text-xl">
       Hi I&apos;m Chris, a passionate{' '}
       <span className="text-white">frontend developer</span> based in Poland, with over{' '}
       <span className="text-white">4 years of commercial experience</span>. Specializing
@@ -15,18 +15,18 @@ const Description = () => (
     <h4 className="mb-4 mt-8 text-left text-2xl tracking-tighter text-white">
       Technical
     </h4>
-    <p className="text-xl tracking-tighter text-white/60">
+    <p className="text-lg tracking-tighter text-white/60 md:text-xl">
       My development roots are in{' '}
       <span className="text-white">React, Next.js, Node.js</span> and Express.js and in
       general anything JavaScript / TypeScript related in React ecosystem.
     </p>
-    <p className="mt-4 text-xl tracking-tighter text-white/60">
+    <p className="mt-4 text-lg tracking-tighter text-white/60 md:text-xl">
       Furthermore, I have experience in creating websites using{' '}
       <span className="text-white">WordPress</span>, harnessing its flexibility and
       extensibility to deliver customized solutions for clients.
     </p>
     <h4 className="mb-4 mt-8 text-left text-2xl tracking-tighter text-white">Personal</h4>
-    <p className="text-xl tracking-tighter text-white/60">
+    <p className="text-lg tracking-tighter text-white/60 md:text-xl">
       I&apos;m actively involved in creating SaaS apps, indie hacking, and developing a
       web MMO game. Additionally, I&apos;m passionate about studying design principles to
       enhance user experiences across all my projects.

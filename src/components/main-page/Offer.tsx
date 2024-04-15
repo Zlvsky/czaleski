@@ -25,19 +25,19 @@ const offerData = [
 function Offer() {
   return (
     <BigContainer>
-      <div className="grid grid-cols-1 gap-12 md:grid-cols-2  lg:grid-cols-3 ">
+      <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 ">
         {offerData.map((offer, index) => (
           <div
             key={index}
-            className="flex aspect-square h-full flex-col justify-between rounded-2xl border border-darkborder bg-dark26/60 p-8"
+            className="flex md:aspect-square h-full flex-col justify-between rounded-2xl border border-darkborder bg-dark26/60 p-4 md:p-8"
           >
             <div className="">
-              <h3 className="mb-4 text-2xl font-medium tracking-tighter text-white">
+              <h3 className="mb-4 text-xl md:text-2xl font-medium tracking-tighter text-white">
                 {offer.title}
               </h3>
-              <p className="text-lg text-gray1">{offer.description}</p>
+              <p className="text-base md:text-lg text-gray1">{offer.description}</p>
             </div>
-            <div className="flex items-center gap-3">
+            <div className="mt-10 md:mt-0 flex items-center gap-3">
               {offer.icons.map((Icon, index) => (
                 <Icon key={index} width={40} height={40} />
               ))}

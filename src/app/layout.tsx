@@ -1,4 +1,3 @@
-import SmoothScrolling from '@/components/layout/SmoothScrolling'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -37,7 +36,7 @@ export default function RootLayout({
             `}
       </Script>
       <body className={inter.className}>
-        <SmoothScrolling>{children}</SmoothScrolling>
+       {children}
       </body>
     </html>
   )

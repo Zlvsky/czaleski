@@ -33,24 +33,24 @@ const projects = [
   {
     title: 'Visity',
     description:
-      'Side Project - SaaS app for creating simple landing pages in minutes, dedicated for small businesses.',
+      'Designed and developed whole frontend & backend using Next.js and Node.js. Visity is SaaS app for creating simple landing pages in minutes for shareable link, dedicated for small businesses to include information like; services, pricing, gallery and most important info about business.',
     link: 'https://visity.pl',
     linkText: 'visity.pl',
     logo: '/projects/visity.png',
-    stack: ['React', 'Next.js', 'TailwindCSS', 'MongoDB']
+    stack: ['React', 'Next.js', 'Node.js', 'TailwindCSS', 'MongoDB']
   },
   {
     title: 'Realm of Dungeons',
     description:
-      'Side Project - Web based, idle multiplayer retro game inspired by Shakes & Fidget',
-    link: 'https://realmdungeons.web.app',
-    linkText: 'realmdungeons.web.app',
+      'Developed MVP for Web based, idle multiplayer retro game inspired by Shakes & Fidget. Including landing page, game mechanics, user authentication, assets and game content.',
+    link: 'https://realmofdungeons.pages.dev/',
+    linkText: 'realmofdungeons.pages.dev',
     logo: '/projects/rod.png',
     stack: ['React', 'Node.js', 'Express', 'PIXI.js', 'MongoDB', 'Docker']
   },
   {
     title: 'One-place',
-    description: `Side Project - CRUD admin panel to manage business based on orders that don't need online shop.`,
+    description: `CRUD admin panel to manage business based on orders that don't need online shop. Reached 26+ stars on GitHub.`,
     link: 'https://github.com/Zlvsky/one-place',
     linkText: 'github.com/zlvsky/one-place',
     stack: ['React', 'Node.js', 'Express', 'MySQL']
@@ -84,7 +84,7 @@ const Project = ({ title, description, link, linkText, logo, stack }: IProject) 
   )
 
   return (
-    <div className="flex-start flex flex-row rounded-3xl border border-darkborder bg-dark26/60 p-6 md:p-10">
+    <div className="flex-start flex flex-row rounded-3xl border border-darkborder bg-dark26/60 p-4 md:p-10">
       <div className="flex flex-col items-start gap-2">
         <h4 className="text-2xl font-medium tracking-tighter text-white">{title}</h4>
         <p className="mb-4 text-base text-white/60">{description}</p>
