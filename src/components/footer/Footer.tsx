@@ -3,6 +3,10 @@ import BigContainer from '../layout/BigContainer'
 
 const links = [
   {
+    name: 'Privacy Policy',
+    link: '/privacy-policy'
+  },
+  {
     name: 'Twitter',
     link: 'https://twitter.com/zlvskyy'
   },
@@ -33,7 +37,7 @@ function Footer() {
         <span className="text-sm tracking-tight text-gray7B">
           © {year} Krzysztof Zaleski. All Rights Reserved.
         </span>
-        <div className="flex flex-row items-center gap-5">
+        <div className="mt-6 md:mt-0 flex flex-row flex-wrap justify-center items-center gap-5">
           {links.map((link, index) => (
             <a
               key={index}
