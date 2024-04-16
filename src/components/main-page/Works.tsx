@@ -12,24 +12,24 @@ interface IProject {
 }
 
 const projects = [
-  {
-    title: 'Erevie @ goodsoft.pl',
-    description:
-      'As the sole frontend developer, I led the development of a web platform for the Polish real estate market. Collaborating with backend and mobile teams. I actively participated in discussions and problem-solving sessions to ensure seamless integration and functionality across all facets of the platform. My role encompassed not only the technical implementation but also the strategic alignment of frontend features.',
-    link: 'https://app.erevie.pl',
-    linkText: 'erevie.pl',
-    logo: '/projects/visity.png',
-    stack: ['React', 'Redux', 'TailwindCSS', 'Firebase', 'ReactPDF']
-  },
-  {
-    title: 'Successio @ goodsoft.pl',
-    description:
-      'I led frontend development for Successio, a web app aiding market professionals in inheritance planning and personal finance management. Collaborating across teams, I ensured seamless integration and functionality, contributing to discussions for enhanced effectiveness.',
-    link: 'https://app.successio.pl',
-    linkText: 'app.successio.pl',
-    logo: '/projects/visity.png',
-    stack: ['React', 'Redux', 'TailwindCSS', 'Firebase', 'Agora.io']
-  },
+  // {
+  //   title: 'Erevie @ goodsoft.pl',
+  //   description:
+  //     'As the sole frontend developer, I led the development of a web platform for the Polish real estate market. Collaborating with backend and mobile teams. I actively participated in discussions and problem-solving sessions to ensure seamless integration and functionality across all facets of the platform. My role encompassed not only the technical implementation but also the strategic alignment of frontend features.',
+  //   link: 'https://app.erevie.pl',
+  //   linkText: 'erevie.pl',
+  //   logo: '/projects/visity.png',
+  //   stack: ['React', 'Redux', 'TailwindCSS', 'Firebase', 'ReactPDF']
+  // },
+  // {
+  //   title: 'Successio @ goodsoft.pl',
+  //   description:
+  //     'I led frontend development for Successio, a web app aiding market professionals in inheritance planning and personal finance management. Collaborating across teams, I ensured seamless integration and functionality, contributing to discussions for enhanced effectiveness.',
+  //   link: 'https://app.successio.pl',
+  //   linkText: 'app.successio.pl',
+  //   logo: '/projects/visity.png',
+  //   stack: ['React', 'Redux', 'TailwindCSS', 'Firebase', 'Agora.io']
+  // },
   {
     title: 'Visity',
     description:
