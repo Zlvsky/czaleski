@@ -6,6 +6,7 @@ import TomaszImage from '@/assets/images/clients/tomaszmichno.png'
 import WbhaleImage from '@/assets/images/clients/wbhale.png'
 import Image, { StaticImageData } from 'next/image'
 import BigContainer from '../layout/BigContainer'
+import SectionHeader from '../common/SectionHeader'
 
 const testimonials = [
   {
@@ -90,9 +91,8 @@ const TestimonialBox = ({
 function Testimonials() {
   return (
     <BigContainer>
-      <h2 className="mt-28 text-center text-4xl tracking-tighter text-white">
-        Clients Testimonials
-      </h2>
+      <div className="mt-20 md:mt-28"></div>
+      <SectionHeader title="Words from Clients" subtitle={'Testimonials'} />
       <div className="mt-10">
         <div className="columns-1 gap-4 space-y-4 md:columns-2 lg:columns-3">
           {testimonials.map((testimonial, index) => (

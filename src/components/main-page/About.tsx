@@ -1,10 +1,11 @@
 'use client'
 import ResumeSVG from '@/assets/icons/info/resume.svg'
 import BigContainer from '../layout/BigContainer'
+import SectionHeader from '../common/SectionHeader'
 
 const Description = () => (
   <div>
-    <h2 className="mb-4 text-center text-4xl tracking-tighter text-white">About me</h2>
+    
     <p className="text-lg tracking-tighter text-white/60 md:text-xl">
       Hi I&apos;m Chris, a passionate{' '}
       <span className="text-white">frontend developer</span> based in Poland, with over{' '}
@@ -52,8 +53,9 @@ const ContactButton = () => {
 function About() {
   return (
     <BigContainer id="about">
-      <div className="mt-20 flex flex-col items-center justify-center">
+      <div className="mt-20 md:mt-28 flex flex-col items-center justify-center">
         <div className="flex max-w-xl flex-col items-center">
+          <SectionHeader title="Get to know me" subtitle={"About me"} />
           <Description />
           <ContactButton />
         </div>

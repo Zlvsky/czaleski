@@ -5,6 +5,7 @@ import SpecificationsSVG from '@/assets/icons/workflow/specifications.svg'
 import StripeSVG from '@/assets/icons/workflow/stripe.svg'
 import YoutrackSVG from '@/assets/icons/workflow/youtrack.svg'
 import BigContainer from '../layout/BigContainer'
+import SectionHeader from '../common/SectionHeader'
 
 const WorkflowStack = () => {
   return (
@@ -35,11 +36,11 @@ const WorkflowStack = () => {
 
 function Process() {
   return (
-    <div className="z-10 mt-10 h-full w-full md:pt-14">
+    <div className="z-10 mt-20 h-full w-full md:mt-28">
       <BigContainer>
-        <h2 className="text-center text-4xl text-white">Workflow</h2>
+        <SectionHeader title="How I get things done" subtitle={'Workflow'} />
         <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-20">
-          <div className="flex flex-col items-center gap-6 text-center md:items-start md:text-left">
+          <div className="flex flex-col items-center gap-6 text-center md:items-center">
             <SpecificationsSVG />
             <h4 className="text-2xl text-white">Specifications</h4>
             <p className="text-[#A3A3A3]">
@@ -55,7 +56,7 @@ function Process() {
               cycle.
             </p>
           </div>
-          <div className="flex flex-col items-center gap-6 text-center md:items-end md:text-right">
+          <div className="flex flex-col items-center gap-6 text-center md:items-center">
             <DeliverySVG />
             <h4 className="text-2xl text-white ">Delivery</h4>
             <p className="text-[#A3A3A3]">

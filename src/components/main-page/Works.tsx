@@ -1,6 +1,7 @@
 'use client'
 import LinkSVG from '@/assets/icons/common/link.svg'
 import BigContainer from '../layout/BigContainer'
+import SectionHeader from '../common/SectionHeader'
 
 interface IProject {
   title: string
@@ -98,10 +99,9 @@ const Project = ({ title, description, link, linkText, logo, stack }: IProject) 
 function Works() {
   return (
     <BigContainer id="works">
-      <h2 className="mb-4 mt-28 text-center text-4xl tracking-tighter text-white">
-        Works
-      </h2>
-      <div className="mx-auto grid w-full grid-cols-1 gap-6 pb-8 pt-8 md:grid-cols-2 md:px-3 ">
+      <div className="mt-20 md:mt-28"></div>
+      <SectionHeader title="Featured projects" subtitle={'Works'} />
+      <div className="mx-auto grid w-full grid-cols-1 gap-6 pt-8 md:grid-cols-2 md:px-3 ">
         {projects.map((project, index) => (
           <Project key={'project_' + index} {...project} />
         ))}
