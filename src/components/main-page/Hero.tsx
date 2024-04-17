@@ -84,7 +84,7 @@ const SubHeader = () => {
         hidden: { opacity: 0, y: 30 }
       }}
     >
-      <h4 className="mb-4 mt-5 flex items-center text-center gap-1 rounded-lg border border-darkborder bg-dark26 px-1 py-1.5 text-base tracking-tight text-white/50">
+      <h4 className="mb-4 mt-5 flex items-center text-center gap-1 rounded-lg border border-darkborder bg-dark26 px-2 py-1.5 text-base tracking-tight text-white/50">
         coded websites ◦ web apps ◦ outsourcing
       </h4>
     </motion.div>
@@ -110,7 +110,7 @@ const MainHeader = () => {
       }}
     >
       <h1 className="max-w-3xl text-center text-3xl font-medium tracking-tighter text-white md:text-[5rem] md:leading-[5rem]">
-        Freelancing developer that gets work done.
+        Web developer that gets work done.
       </h1>
     </motion.div>
   )

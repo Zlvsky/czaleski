@@ -6,8 +6,8 @@ import SectionHeader from '../common/SectionHeader'
 interface IProject {
   title: string
   description: string
-  link: string
-  linkText: string
+  link?: string
+  linkText?: string
   logo?: string
   stack: string[]
 }
@@ -55,6 +55,11 @@ const projects = [
     link: 'https://github.com/Zlvsky/one-place',
     linkText: 'github.com/zlvsky/one-place',
     stack: ['React', 'Node.js', 'Express', 'MySQL']
+  },
+  {
+    title: 'Automation Bot',
+    description: `Custom-made bot that automates the insertion of ads on a portal with orders in the IT industry. Written in Puppeteer`,
+    stack: ['Node.js', 'Puppeteer']
   }
 ]
 
@@ -90,7 +95,7 @@ const Project = ({ title, description, link, linkText, logo, stack }: IProject) 
         <h4 className="text-2xl font-medium tracking-tighter text-white">{title}</h4>
         <p className="mb-4 text-base text-white/60">{description}</p>
         <Stack />
-        <Link />
+        {(link && linkText) && <Link />}
       </div>
     </div>
   )
