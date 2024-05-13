@@ -9,7 +9,7 @@ const Description = () => (
     <p className="text-lg tracking-tighter text-white/60 md:text-xl">
       Hi I&apos;m Chris, a passionate{' '}
       <span className="text-white">frontend developer</span> based in Poland, with over{' '}
-      <span className="text-white">4 years of commercial experience</span>. Specializing
+      <span className="text-white">3 years of commercial experience</span>. Specializing
       in <span className="text-white">end-to-end development</span>, I focus on crafting
       seamless user experiences through innovative solutions.
     </p>
@@ -38,10 +38,9 @@ const Description = () => (
 const ContactButton = () => {
   return (
     <a
-      href="https://drive.google.com/file/d/1qIPu8SZ8ihFguJIER_0vAFMAAvaN6JPJ/view"
+      href="https://drive.google.com/file/d/16vH538erKi6kTfgIucXa-Kfw4FnMENVe/view?usp=sharing"
       target="_blank"
-      referrerPolicy="no-referrer"
-    >
+      referrerPolicy="no-referrer">
       <button className="mt-8 flex flex-row items-center rounded-2xl border border-darkborder bg-dark30/60 px-5 py-4">
         <ResumeSVG className="-mt-1.5" />
         <span className="ml-2 text-20 tracking-tight text-white">Resume</span>

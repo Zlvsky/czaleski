@@ -147,7 +147,7 @@ const Description = () => {
 
 const ContactButton = () => {
   return (
-    <a href="mailto:webzaleski@gmail.com">
+    <a href="mailto:zlvsky@icloud.com">
       <button className="mt-8 flex flex-row items-center rounded-2xl border border-darkborder bg-dark30/60 px-5 py-4">
         <EmailSvg className="-mt-1.5" />
         <span className="ml-2 text-20 tracking-tight text-white">Get In Touch</span>
